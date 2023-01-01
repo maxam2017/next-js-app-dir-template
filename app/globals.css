@@ -1,0 +1,10 @@
+html,
+body,
+#__next {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background-color: #f8fafc;
+}

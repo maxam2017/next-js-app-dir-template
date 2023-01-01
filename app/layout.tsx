@@ -1,3 +1,9 @@
+import Content from "../components/content";
+import { Footer } from "../components/footer";
+import Header from "../components/header";
+import "windi.css";
+import "./globals.css";
+
 export default function RootLayout({
   children,
 }: {
@@ -6,7 +12,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head />
-      <body>{children}</body>
+      <body>
+        <Header />
+        <Content>{children}</Content>
+        <Footer />
+      </body>
     </html>
   );
 }
